@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.TablesController">
+  <VBox prefWidth="662.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+    <Label text="Результат лексического анализа">
+      <VBox.margin>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+      </VBox.margin>
+    </Label>
+    <TextArea fx:id="res" editable="false" prefHeight="116.0" prefWidth="601.0" wrapText="true">
+      <VBox.margin>
+        <Insets left="5.0" right="5.0" />
+      </VBox.margin>
+    </TextArea>
+    <Label text="Таблицы" VBox.margin="$x1" />
+    <HBox prefHeight="290.0" prefWidth="673.0">
+      <TableView fx:id="functions" focusTraversable="true" prefHeight="290.0" prefWidth="325.0" tableMenuButtonVisible="false">
+        <columns>
+          <TableColumn text="№" fx:id="id" />
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="214.0" resizable="true" text="Значение" fx:id="val" />
+        </columns>
+        <HBox.margin>
+          <Insets right="7.0" />
+        </HBox.margin>
+      </TableView>
+      <TableView fx:id="tablims" prefHeight="290.0" prefWidth="319.0">
+        <columns>
+          <TableColumn text="№" fx:id="id1" />
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="215.0" text="Значение" fx:id="val1" />
+        </columns>
+      </TableView>
+      <VBox.margin>
+        <Insets left="6.0" fx:id="x2" />
+      </VBox.margin>
+    </HBox>
+    <HBox padding="$x2" prefHeight="352.9999000000025" prefWidth="610.9998779296875">
+      <TableView fx:id="digits" prefHeight="348.0" prefWidth="325.0">
+        <columns>
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="41.0" text="№" fx:id="id3" />
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" text="Двоичное значение" fx:id="binval3" />
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="97.0" text="Значение" fx:id="val3" />
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="85.0" text="Тип" fx:id="type3" />
+        </columns>
+        <HBox.margin>
+          <Insets bottom="5.0" right="7.0" fx:id="x3" />
+        </HBox.margin>
+      </TableView>
+      <VBox.margin>
+        <Insets top="5.0" />
+      </VBox.margin>
+      <TableView fx:id="names" prefHeight="348.0" prefWidth="319.0" HBox.margin="$x3">
+        <columns>
+          <TableColumn text="№" fx:id="id2" />
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="139.0" text="Значение" fx:id="val2" />
+          <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="Тип" fx:id="type2" />
+        </columns>
+      </TableView>
+    </HBox>
+  </VBox>
+</GridPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+  <VBox prefHeight="548.0" prefWidth="681.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+    <Label text="Исходный текст">
+      <VBox.margin>
+        <Insets left="7.0" top="5.0" fx:id="x1" />
+      </VBox.margin>
+    </Label>
+       <TextArea fx:id="code" prefHeight="375.0" prefWidth="681.0" text="
+       int a, b, c: input(a): input(b): if a LT b then c = a plus 1.1e2 else c = b min ~10b end_else: output(a b c): end" VBox.vgrow="SOMETIMES">
+      <VBox.margin>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x2" />
+      </VBox.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
+    </TextArea>
+    <HBox prefWidth="671.0000915527344">
+      <Button fx:id="button" defaultButton="true" onAction="#onClickMethod" text="Ok" textOverrun="ELLIPSIS">
+        <HBox.margin>
+          <Insets right="5.0" />
+        </HBox.margin>
+      </Button>
+      <Button fx:id="tablesBtn" disable="false" onAction="#viewTablesMethod" text="Таблицы">
+        <HBox.margin>
+          <Insets right="5.0" />
+        </HBox.margin>
+      </Button>
+      <Button fx:id="graphBtn" disable="true" onAction="#viewGraphMethod" text="Граф" />
+      <VBox.margin>
+        <Insets left="7.0" />
+      </VBox.margin>
+    </HBox>
+    <VBox>
+      <Label text="Результат анализа" VBox.margin="$x1" />
+      <TextArea fx:id="errorTextArea" editable="false" prefHeight="106.0" prefWidth="681.0" VBox.margin="$x2" VBox.vgrow="SOMETIMES" />
+    </VBox>
+  </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
