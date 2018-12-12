@@ -11,7 +11,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="taf.kr.MainController">
   <VBox prefHeight="548.0" prefWidth="681.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
     <Label text="Исходный текст">
       <VBox.margin>
