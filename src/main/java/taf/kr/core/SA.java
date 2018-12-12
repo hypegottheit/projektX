@@ -10,7 +10,7 @@ public class SA {
     Iterator<Lexem> it;
     ArrayList<String> ob;
     ArrayList<Lexem> vars;
-    /*
+    
     public Node analyze(ArrayList<Lexem> res, ArrayList<Lexem> vars) {
         this.table = res;
         this.vars = vars;
@@ -36,7 +36,7 @@ public class SA {
             throw new RuntimeException("Ошибка: ожидался '}'; Получено " + lexem.getValue());
         return root;
     }
-    */
+    /*
     public Node analyze(ArrayList<Lexem> res, ArrayList<Lexem> vars) {
         this.table = res;
         this.vars = vars;
@@ -58,7 +58,7 @@ public class SA {
             throw new RuntimeException("Ошибка: ожидался 'end'; Получено ");
         return root;
     }
-
+*/
     private void operator(Lexem lexem) {
         Node node = createNode("operator");
         if (lexem.getValue().equals("if")) condition();
