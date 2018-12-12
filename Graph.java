@@ -3,7 +3,7 @@ package sample;
 import java.util.List;
 
 /**
- * Created by Alexey on 25.11.2016.
+ * Created by 
  */
 public interface Graph {
     Object getObject();
