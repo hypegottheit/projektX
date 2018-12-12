@@ -1,4 +1,4 @@
-package sample;
+package taf.kr.core;
 
 import java.util.List;
 

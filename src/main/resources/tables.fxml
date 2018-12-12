@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 <GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
-          fx:controller="taf.kr.TablesController">
+          fx:controller="taf.kr.ui.TablesController">
   <VBox prefWidth="662.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
     <Label text="Результат лексического анализа">
       <VBox.margin>

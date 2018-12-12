@@ -1,4 +1,4 @@
-package taf.kr;
+package taf.kr.ui;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -7,6 +7,9 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.PropertyValueFactory;
+import taf.kr.core.Digit;
+import taf.kr.core.Lexem;
+import taf.kr.core.Table;
 
 import java.util.ArrayList;
 import java.util.List;

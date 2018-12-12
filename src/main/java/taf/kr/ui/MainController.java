@@ -1,4 +1,4 @@
-package taf.kr;
+package taf.kr.ui;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,6 +7,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import taf.kr.core.LA;
+import taf.kr.core.Node;
+import taf.kr.core.SA;
+import taf.kr.core.Table;
 
 import java.io.IOException;
 

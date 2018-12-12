@@ -1,4 +1,4 @@
-package taf.kr;
+package taf.kr.core;
 
 import java.util.ArrayList;
 import java.util.Arrays;

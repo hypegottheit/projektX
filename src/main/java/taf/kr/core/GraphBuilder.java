@@ -1,4 +1,4 @@
-package taf.kr;
+package taf.kr.core;
 
 import com.mxgraph.util.mxConstants;
 import com.mxgraph.view.mxGraph;

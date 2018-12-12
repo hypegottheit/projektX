@@ -1,4 +1,4 @@
-package taf.kr;
+package taf.kr.core;
 
 public class Digit {
 
