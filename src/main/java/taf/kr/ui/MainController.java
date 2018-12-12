@@ -50,7 +50,7 @@ public class MainController {
     @FXML
     public void viewTablesMethod() throws IOException {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../../../resources/tables.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(MainController.class.getResource("tables.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
