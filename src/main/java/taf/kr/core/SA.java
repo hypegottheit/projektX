@@ -10,7 +10,33 @@ public class SA {
     Iterator<Lexem> it;
     ArrayList<String> ob;
     ArrayList<Lexem> vars;
-
+    /*
+    public Node analyze(ArrayList<Lexem> res, ArrayList<Lexem> vars) {
+        this.table = res;
+        this.vars = vars;
+        ob = new ArrayList<>();
+        it = table.listIterator();
+        root = new Node("S");
+        current = root;
+        Lexem lexem = it.next();
+        if (!lexem.getValue().equals("{"))
+            throw new RuntimeException("Ошибка: ожидался '{'; Получено " + lexem.getValue());
+        while (it.hasNext()) {
+            lexem = it.next();
+            if (lexem.getValue().equals("{")) continue;
+            if (lexem.getValue().equals("}")) break;
+            if (lexem.getValue().equals("let")) let();
+            else if (lexem.isVar()) {
+                if (!assignment(lexem))
+                    it.next();
+            } else operator(lexem);
+            current = root;
+        }
+        if (!table.get(table.size() - 1).getValue().equals("}"))
+            throw new RuntimeException("Ошибка: ожидался '}'; Получено " + lexem.getValue());
+        return root;
+    }
+    */
     public Node analyze(ArrayList<Lexem> res, ArrayList<Lexem> vars) {
         this.table = res;
         this.vars = vars;
