@@ -20,7 +20,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.1.0</version>
                 <configuration>
                     <!-- get all project dependencies -->
                     <descriptorRefs>
@@ -50,13 +50,19 @@
         </plugins>
     </build>
     <!--<dependencyManagement>-->
-    <!--<dependencies>-->
-    <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.mxgraph/jgraphx &ndash;&gt;-->
-    <!--<dependency>-->
-    <!--<groupId>com.mxgraph</groupId>-->
-    <!--<artifactId>jgraphx</artifactId>-->
-    <!--<version>3.6.0</version>-->
-    <!--</dependency>-->
-    <!--</dependencies>-->
+    <dependencies>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.mxgraph/jgraphx &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>com.mxgraph</groupId>-->
+        <!--<artifactId>jgraphx</artifactId>-->
+        <!--<version>3.6.0</version>-->
+        <!--</dependency>-->
+        <!--::3.9.8-->
+        <dependency>
+            <groupId>com.github.vlsi.mxgraph</groupId>
+            <artifactId>jgraphx</artifactId>
+            <version>3.9.8</version>
+        </dependency>
+    </dependencies>
     <!--</dependencyManagement>-->
 </project>
